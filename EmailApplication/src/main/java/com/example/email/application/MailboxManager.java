@@ -8,6 +8,9 @@ public class MailboxManager {
     }
 
     public void addNewEmails(int amount) {
+        if (amount > mailboxCapacity) {
+            throw new RuntimeException("You want to add too many emails!");//TODO More specific exception
+        }
         mailboxCapacity -= amount;
     }
 

@@ -1,38 +1,21 @@
 package com.example.email.application;
 
 public class EmailGenerator {
-    private final String firstName;
-    private final String lastName;
-    private final String department;
+    private static final String DOMAIN = "mycompany.com";
 
-    public EmailGenerator(String firstName, String lastName, String department) {
-        this.firstName = firstName.toLowerCase();
-        this.lastName = lastName.toLowerCase();
-        this.department = department.toLowerCase();
-    }
+    public String generateEmail(String firstName, String lastName, String department) {
+        firstName = firstName.toLowerCase();
+        lastName = lastName.toLowerCase();
+        department = department.toLowerCase();
 
-    public EmailGenerator(String firstName, String lastName) {
-        this(firstName, lastName, "");
-    }
-
-    public String generateEmail() {
-        String company = "mycompany";
         if (department.isBlank()) {
-            return String.format("%s.%s@%s.com", firstName, lastName, company);
+            return String.format("%s.%s@%s", firstName, lastName, DOMAIN);
         } else {
-            return String.format("%s.%s@%s.%s.com", firstName, lastName, department, company);
+            return String.format("%s.%s@%s.%s", firstName, lastName, department, DOMAIN);
         }
     }
 
-    public String generateAlternateEmail() {
-        return "alternate." + generateEmail();
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String generateAlternateEmail(String firstName, String lastName, String department) {
+        return "alternate." + generateEmail(firstName, lastName, department);
     }
 }

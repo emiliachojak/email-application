@@ -9,3 +9,5 @@ o
 ?src/main/java/com/example/email/application/MailboxManager.java,3\d\3d2d02220cf9997a12820c677ec668471b3cb21a
 x
 Hsrc/main/java/com/example/email/application/PassayPasswordGenerator.java,f\c\fc6b7359f2cf9a65896223e4e44004dee6721c32
+z
+Jsrc/test/java/com/example/test/email/application/TestEmailApplication.java,e\1\e1617c23df09bd6b39dc996709ff6640af09a821
