@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.test.email.application.testEmailApplication" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-09-28T09:28:39" hostname="LAPTOP-HLAS44QL" time="0.022">
+  <properties/>
+  <testcase name="testChangingPassword" classname="com.example.test.email.application.testEmailApplication" time="0.008"/>
+  <testcase name="testEmailGenerationWithoutDepartment" classname="com.example.test.email.application.testEmailApplication" time="0.002"/>
+  <testcase name="testPassayPasswordGenerator" classname="com.example.test.email.application.testEmailApplication" time="0.002"/>
+  <testcase name="testRemovingEmails" classname="com.example.test.email.application.testEmailApplication" time="0.001"/>
+  <testcase name="testAddingNewEmails" classname="com.example.test.email.application.testEmailApplication" time="0.001"/>
+  <testcase name="testEmailGenerationWithDepartment" classname="com.example.test.email.application.testEmailApplication" time="0.001"/>
+  <testcase name="testChangingCapacity" classname="com.example.test.email.application.testEmailApplication" time="0.0"/>
+  <testcase name="testGeneratingAlternateEmail" classname="com.example.test.email.application.testEmailApplication" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
